@@ -1,21 +1,15 @@
 from django.db import models
 
-class Curso(models.Model):
-    nombre = models.CharField(max_length=40)
-    camada = models.IntegerField()
+class MovieInfo(models.Model):
+    clasificacion = models.CharField(max_length=10)
+    genero = models.CharField(max_length=10)
+    lenguajeOriginal = models.CharField(max_length=10)
+    director = models.CharField(max_length=40)
+    productor = models.CharField(max_length=40)
+    escritor = models.CharField(max_length=40)
+    fechaEstreno = models.DateField()
+    fechaStreaming = models.DateField()
+    duracion = models.IntegerField()
+    distribuidor = models.CharField(max_length=40)
 
-class Estudiante(models.Model):
-    nombre = models.CharField(max_length=40)
-    apellido = models.CharField(max_length=40)
-    email = models.EmailField()
-
-class Profesor(models.Model):
-    nombre = models.CharField(max_length=40)
-    apellido = models.CharField(max_length=40)
-    email = models.EmailField()
-
-class Entregable(models.Model):
-    nombre = models.CharField(max_length=40)
-    fechaDeEntrega = models.DateField()
-    entregado = models.BooleanField()
 

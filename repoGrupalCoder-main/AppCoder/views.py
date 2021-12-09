@@ -5,20 +5,20 @@ from django.http import HttpResponse
 def inicio(request):
     return render(request, 'AppCoder/inicio.html')
 
-def cursos(request):
-    return render(request, 'AppCoder/cursos.html')
+def accion(request):
+    return render(request, 'AppCoder/accion.html')
 
 
-def profesores(request):
-    return render(request, 'AppCoder/profesores.html')
+def romance(request):
+    return render(request, 'AppCoder/romance.html')
 
 
-def estudiantes(request):
-    return render(request, 'AppCoder/estudiantes.html')
+def terror(request):
+    return render(request, 'AppCoder/terror.html')
 
 
-def entregable(request):
-    return render(request, 'AppCoder/entregable.html')
+def suspenso(request):
+    return render(request, 'AppCoder/suspenso.html')
 
 def estrenos(request):
     return render(request, 'AppCoder/estrenos.html')
