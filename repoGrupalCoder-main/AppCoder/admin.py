@@ -1,4 +1,5 @@
 from django.contrib import admin
-from .models import *
+from .models import MovieInfo, MovieLinks
 
 admin.site.register(MovieInfo)
+admin.site.register(MovieLinks)

@@ -26,6 +26,7 @@ class MovieInfo(models.Model):
     category = models.CharField(choices=CATEGORIA, max_length=1)
     idioma = models.CharField(choices=IDIOMA, max_length=2)
     estado = models.CharField(choices=ESTADO, max_length=2)
+    cast = models.CharField(max_length=500)
     prodYear = models.DateField()
     viewsCount = models.IntegerField(default=0)
 
@@ -33,4 +34,12 @@ class MovieInfo(models.Model):
         return self.titulo
 
 
+SELECCION_DE_ENLACE = (
+    ('D', 'Link de descarga'),
+    ('M', 'Mirar pelicula'),
+)
 
+class MovieLinks(models.Model):
+    peli = models.ForeignKey(MovieInfo, related_name='movie_watch_link', on_delete=models.CASCADE)
+    tipo = models.CharField(choices=SELECCION_DE_ENLACE, max_length=1)
+    enlace = models.URLField()
