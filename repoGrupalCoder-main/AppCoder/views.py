@@ -25,3 +25,12 @@ def estrenos(request):
 
 def oblivion(request):
     return render(request, 'AppCoder/oblivion.html')
+
+def revenant(request):
+    return render(request, 'AppCoder/revenant.html')
+
+def diehard(request):
+    return render(request, 'AppCoder/diehard.html')
+    
+def thewalk(request):
+    return render(request, 'AppCoder/thewalk.html')

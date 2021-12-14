@@ -3,7 +3,7 @@ from django.db import models
 CATEGORIA = (
     ('A', 'ACCION'),
     ('S', 'SUSPENSO'),
-    ('C', 'SCIFI'),
+    ('S', 'SCIFI'),
     ('R', 'ROMANCE'),
 )
 

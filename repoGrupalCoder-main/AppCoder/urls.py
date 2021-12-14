@@ -8,5 +8,10 @@ urlpatterns = [
     path('romance', views.romance, name = "Romance"),
     path('scifi', views.scifi, name = "Scifi"),
     path('suspenso', views.suspenso, name = "Suspenso"),
-    path('oblivion', views.oblivion, name= "Oblivion")
+    path('oblivion', views.oblivion, name= "Oblivion"),
+    path('revenant', views.revenant, name= "Revenant"),
+    path('diehard', views.diehard, name = "DieHard"),
+    path('thewalk', views.diehard, name = "TheWalk"),
 ]
+
+
