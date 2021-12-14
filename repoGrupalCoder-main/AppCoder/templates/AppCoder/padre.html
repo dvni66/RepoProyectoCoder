@@ -190,9 +190,29 @@
 	    </nav>
 	    
 	    <!-- top search form -->
-	    <div class="top-search">
-	    	
-			<input type="text" placeholder="Busca una película que desees ver">
+		<form action="../../form-result.php" method="post"
+		target="_blank">
+		 
+		 <p>
+
+	    <input type="search" name="Busqueda de peliculas"
+		list="listaPeliculas">
+			<input type="submit" value= "Buscar">
+
+		 </p>
+
+		</form>
+
+		<datalist id="listaPeliculas">
+			<option value="Oblivion">
+			<option value="The revenant">
+			<option value="The Walk">
+			<option value="Die hard">
+		
+		</datalist>	
+		 
+
+
 	    </div>
 	</div>
 </header>
