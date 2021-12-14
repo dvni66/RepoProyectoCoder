@@ -13,8 +13,8 @@ def romance(request):
     return render(request, 'AppCoder/romance.html')
 
 
-def terror(request):
-    return render(request, 'AppCoder/terror.html')
+def scifi(request):
+    return render(request, 'AppCoder/scifi.html')
 
 
 def suspenso(request):
@@ -22,3 +22,6 @@ def suspenso(request):
 
 def estrenos(request):
     return render(request, 'AppCoder/estrenos.html')
+
+def oblivion(request):
+    return render(request, 'AppCoder/oblivion.html')

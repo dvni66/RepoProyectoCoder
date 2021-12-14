@@ -6,7 +6,7 @@ urlpatterns = [
     path('estrenos', views.estrenos, name = "Estrenos"),
     path('accion', views.accion, name = "Accion"),
     path('romance', views.romance, name = "Romance"),
-    path('terror', views.terror, name = "Terror"),
+    path('scifi', views.scifi, name = "Scifi"),
     path('suspenso', views.suspenso, name = "Suspenso"),
-    
+    path('oblivion', views.oblivion, name= "Oblivion")
 ]
