@@ -38,7 +38,7 @@ SELECCION_DE_ENLACE = (
 )
 
 class MovieLinks(models.Model):
-    peli = models.ForeignKey(MovieInfo, related_name='movie_watch_link', on_delete=models.CASCADE)
+    #peli = models.ForeignKey(MovieInfo, related_name='movie_watch_link', on_delete=models.CASCADE)
     tipo = models.CharField(choices=SELECCION_DE_ENLACE, max_length=1)
     enlace = models.URLField()
 

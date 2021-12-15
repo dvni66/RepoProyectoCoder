@@ -13,6 +13,7 @@ urlpatterns = [
     path('diehard', views.diehard, name = "DieHard"),
     path('thewalk', views.thewalk, name = "TheWalk"),
     path('peliform', views.peliform, name = "peliForm"),
+    path('linkform', views.linkform, name = "linkForm"),
 ]
 
 

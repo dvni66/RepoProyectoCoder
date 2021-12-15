@@ -1,5 +1,6 @@
 from django import forms
-from AppCoder.models import CATEGORIA, IDIOMA, ESTADO
+from django.forms import Form
+from AppCoder.models import MovieInfo, CATEGORIA, IDIOMA, ESTADO, SELECCION_DE_ENLACE
 
 class PeliForm(forms.Form):
     titulo = forms.CharField()
@@ -13,3 +14,11 @@ class PeliForm(forms.Form):
     def __str__(self):
         return self.titulo
 
+class LinkForm(forms.Form):
+    
+    peli = forms.ChoiceField()
+    tipo = forms.ChoiceField(choices=SELECCION_DE_ENLACE)
+    enlace = forms.URLField()
+    
+    def __str__(self):
+        return self.peli

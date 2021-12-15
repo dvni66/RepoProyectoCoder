@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from AppCoder.forms import PeliForm
-from AppCoder.models import MovieInfo
+from AppCoder.forms import PeliForm, LinkForm
+from AppCoder.models import MovieInfo, MovieLinks
 # Create your views here.
 
 def inicio(request):
@@ -33,8 +33,7 @@ def diehard(request):
     
 def thewalk(request):
     return render(request, 'AppCoder/thewalk.html')
-
-    
+  
 def peliform(request):
     if request.method == "POST":
         miFormulario = PeliForm(request.POST)
@@ -57,3 +56,23 @@ def peliform(request):
         miFormulario = PeliForm()
 
     return render(request, 'AppCoder/peliform.html', {"miFormulario":miFormulario})
+
+
+def linkform(request):
+    if request.method == "POST":
+        miFormulario = LinkForm(request.POST)
+
+        if miFormulario.is_valid():
+            info = miFormulario.cleaned_data
+            linkInfo = MovieLinks(
+                                    peli = info["peli"],                            
+                                    tipo = info["tipo"],
+                                    enlace = info["enlace"],
+                                )
+            linkInfo.save()
+
+            return render(request,  'AppCoder/inicio.html')
+    else:
+        miFormulario = LinkForm()
+
+    return render(request, 'AppCoder/linkform.html', {"miFormulario":miFormulario})
