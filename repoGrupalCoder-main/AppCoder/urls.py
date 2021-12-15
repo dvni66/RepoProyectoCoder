@@ -14,6 +14,7 @@ urlpatterns = [
     path('thewalk', views.thewalk, name = "TheWalk"),
     path('peliform', views.peliform, name = "peliForm"),
     path('linkform', views.linkform, name = "linkForm"),
+    path('comentform', views.comentform, name = "comentForm"),
 ]
 
 

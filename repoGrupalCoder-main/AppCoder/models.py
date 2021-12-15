@@ -1,4 +1,5 @@
 from django.db import models
+from django.forms.fields import CharField
 
 CATEGORIA = (
     ('A', 'ACCION'),
@@ -41,4 +42,11 @@ class MovieLinks(models.Model):
     #peli = models.ForeignKey(MovieInfo, related_name='movie_watch_link', on_delete=models.CASCADE)
     tipo = models.CharField(choices=SELECCION_DE_ENLACE, max_length=1)
     enlace = models.URLField()
+
+class Comentarios(models.Model):
+    nombre = models.CharField(max_length=20)
+    comentario = models.CharField(max_length=500)
+
+    def __str__(self):
+        return self.nombre
 

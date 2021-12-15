@@ -22,3 +22,8 @@ class LinkForm(forms.Form):
     
     def __str__(self):
         return self.peli
+
+
+class ComentForm(forms.Form):
+    nombre = forms.CharField()
+    comentario = forms.CharField()
