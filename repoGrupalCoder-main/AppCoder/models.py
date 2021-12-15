@@ -22,7 +22,7 @@ ESTADO = (
 class MovieInfo(models.Model):
     titulo = models.CharField(max_length=40)
     descripcion = models.CharField(max_length=500)
-    categiria = models.CharField(choices=CATEGORIA, max_length=1)
+    categoria = models.CharField(choices=CATEGORIA, max_length=1)
     idioma = models.CharField(choices=IDIOMA, max_length=2)
     estado = models.CharField(choices=ESTADO, max_length=2)
     cast = models.CharField(max_length=500)

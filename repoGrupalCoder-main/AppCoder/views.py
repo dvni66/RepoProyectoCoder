@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from AppCoder.forms import PeliForm
+from AppCoder.models import MovieInfo
 # Create your views here.
 
 def inicio(request):
@@ -9,14 +10,11 @@ def inicio(request):
 def accion(request):
     return render(request, 'AppCoder/accion.html')
 
-
 def romance(request):
     return render(request, 'AppCoder/romance.html')
 
-
 def scifi(request):
     return render(request, 'AppCoder/scifi.html')
-
 
 def suspenso(request):
     return render(request, 'AppCoder/suspenso.html')
@@ -43,7 +41,7 @@ def peliform(request):
 
         if miFormulario.is_valid():
             info = miFormulario.cleaned_data
-            peliInfo = PeliForm(
+            peliInfo = MovieInfo(
                                     titulo = info["titulo"],
                                     descripcion = info["descripcion"],
                                     categoria = info["categoria"],
