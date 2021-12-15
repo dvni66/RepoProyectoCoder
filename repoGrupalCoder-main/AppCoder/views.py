@@ -65,7 +65,7 @@ def linkform(request):
         if miFormulario.is_valid():
             info = miFormulario.cleaned_data
             linkInfo = MovieLinks(
-                                    peli = info["peli"],                            
+                                    #peli = info["peli"],                            
                                     tipo = info["tipo"],
                                     enlace = info["enlace"],
                                 )

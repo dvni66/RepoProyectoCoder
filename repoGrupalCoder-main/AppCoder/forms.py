@@ -16,7 +16,7 @@ class PeliForm(forms.Form):
 
 class LinkForm(forms.Form):
     
-    peli = forms.ChoiceField()
+    #peli = forms.ChoiceField()
     tipo = forms.ChoiceField(choices=SELECCION_DE_ENLACE)
     enlace = forms.URLField()
     
