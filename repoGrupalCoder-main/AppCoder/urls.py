@@ -11,7 +11,8 @@ urlpatterns = [
     path('oblivion', views.oblivion, name= "Oblivion"),
     path('revenant', views.revenant, name= "Revenant"),
     path('diehard', views.diehard, name = "DieHard"),
-    path('thewalk', views.diehard, name = "TheWalk"),
+    path('thewalk', views.thewalk, name = "TheWalk"),
+    path('peliform', views.peliform, name = "peliForm"),
 ]
 
 
