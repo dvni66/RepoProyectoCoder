@@ -10,6 +10,7 @@ Este proyecto esta creado pura y exclusivamente para ser presentado en el curso 
 El mismo consta de la realizacion de una pagina web simple con herencia de HTML, 3 clases de models, 3 formularios y una busqueda, basado en una web para ver y descargar peliculas.
 
 link github: https://github.com/dvni66/RepoProyectoCoder
+
 link clon: https://github.com/dvni66/RepoProyectoCoder.git
 
 pasos a seguir:
