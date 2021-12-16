@@ -15,6 +15,9 @@ urlpatterns = [
     path('peliform', views.peliform, name = "peliForm"),
     path('linkform', views.linkform, name = "linkForm"),
     path('comentform', views.comentform, name = "comentForm"),
+    path('buscarPelicula', views.buscarPelicula, name = "buscarPelicula"),
+    path('buscar/', views.buscar)
+
 ]
 
 

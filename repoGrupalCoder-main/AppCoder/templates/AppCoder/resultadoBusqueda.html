@@ -1,0 +1,28 @@
+
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block dinamico %}
+	<h1> Buscando...</h1>
+
+	{% if movies %}
+
+		<ul>
+			
+			{% for titulo in movies %}
+				<li>{{	titulo.titulo }}</li>
+				<li>{{	titulo.descripcion }}</li>
+				<li>{{	titulo.categoria }}</li>
+				<li>{{	titulo.idioma }}</li>
+				<li>{{	titulo.estado }}</li>
+				<li>{{	titulo.cast }}</li>
+				<li>{{	titulo.prodYear }}</li>
+			{% endfor %}
+
+		</ul>
+
+	{% endif %}
+	
+
+{% endblock %}
