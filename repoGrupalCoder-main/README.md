@@ -1,6 +1,7 @@
 # repoGrupalCoder
 
 Titulo: pre-entrega del proyecto final
+
 Integratntes: Daniel Cortez, Daniel Patolsky, Javier Kaprielian
 Profesor: Nicolas Perez
 Tutor: Joaquin Zuazo
