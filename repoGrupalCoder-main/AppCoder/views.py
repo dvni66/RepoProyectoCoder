@@ -99,13 +99,14 @@ def buscarPelicula(request):
     return render(request, 'AppCoder/buscarPelicula.html')
 
 def buscar(request):
+  
     if request.GET["titulo"]:
 
         titulo = request.GET["titulo"]
         movies = MovieInfo.objects.filter(titulo__icontains=titulo)
-
+   
         return render(request, "AppCoder/resultadoBusqueda.html", {"movies":movies, "titulo":titulo})
+   
     else:
         respuesta = "No enviaste datos"
-
-    return HttpResponse(respuesta)
+        return render(request, "AppCoder/resultadoBusqueda.html", {"respuesta":respuesta})

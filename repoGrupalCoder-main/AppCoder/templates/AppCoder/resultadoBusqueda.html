@@ -4,11 +4,9 @@
 {% load static %}
 
 {% block dinamico %}
-	<h1> Buscando...</h1>
-
 	{% if movies %}
 
-		<ul>
+		<ul style="color: silver;">
 			
 			{% for titulo in movies %}
 				<li>{{	titulo.titulo }}</li>
@@ -21,7 +19,8 @@
 			{% endfor %}
 
 		</ul>
-
+	{% else %}
+		<h1 style="color: red;">{{	respuesta }}</h1>
 	{% endif %}
 	
 
