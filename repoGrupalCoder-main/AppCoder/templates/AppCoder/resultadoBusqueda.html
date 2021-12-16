@@ -19,6 +19,8 @@
 			{% endfor %}
 
 		</ul>
+	{% elif not movies%}
+		<h1 style="color: red;">{{	respuesta }}</h1>
 	{% else %}
 		<h1 style="color: red;">{{	respuesta }}</h1>
 	{% endif %}
