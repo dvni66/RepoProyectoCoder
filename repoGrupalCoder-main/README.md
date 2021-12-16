@@ -1,6 +1,9 @@
 # repoGrupalCoder
 
 Titulo: pre-entrega del proyecto final
+Integratntes: Daniel Cortez, Daniel Patolsky, Javier Kaprielian
+Profesor: Nicolas Perez
+Tutor: Joaquin Zuazo
 
 Este proyecto esta creado pura y exclusivamente para ser presentado en el curso de python dictado en coderhouse.
 El mismo consta de la realizacion de una pagina web simple con herencia de HTML, 3 clases de models, 3 formularios y una busqueda, basado en una web para ver y descargar peliculas.
@@ -60,11 +63,8 @@ BUSQUEDA
 
 -----
 HERENCIA HTML
+
 Las herencias estan dadas en la barra de navegacion en el margen superior de la web 
 http://127.0.0.1:8000/AppCoder/inicio
 
 -----
-
-Integratntes: Daniel Cortez, Daniel Patolsky, Javier Kaprielian
-Profesor: Nicolas Perez
-Tutor: Joaquin Zuazo
